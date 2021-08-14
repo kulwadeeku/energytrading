@@ -1,0 +1,29 @@
+# https://www.aliexpress.com/item/32675768303.html
+Description:
+ 
+The module uses HID technology, foreign trade quality, without any driver on the windows system plug and play, easy to use and simple. We provide applications and C + + source code, professional and experienced engineers to provide you professional services, patiently answer any of your questions. You can simply relaxing this module to your own projects.
+ 
+Features:
+1 square onboard USB interface for connection stability
+2 the use of imported high-performance USB controller chip
+3 Use the special relay driver chip ULN2803, relay work more stable
+4 Using genuine Songle relay
+5 military grade PCB board production
+6 board power outlets and terminals, two kinds of access to power is flexible. After connecting the power, even if the computer off or unplug the USB from the computer, the relay can also remains set.
+7. PCB size: 71.6mm*65.3mm
+8 fixing holes size: 3mm, fixing hole central moments: 67.4mm*61.3mm 
+ 
+Specifications: 
+1. Home automation
+2. Robotics Contorl
+3. Control doors and windows via windows system
+4. Contorler power supply
+Module Parameter
+Relay Type : Songle 12V Relay
+Relay Count : 4
+Contack Type : NC/ COM/ NO
+Input Voltage : DC 12V 
+Input Current : >>300mA
+The maximum you can control AC 250V, 10A DC30V 10A AC load and maximum DC load
+
+
