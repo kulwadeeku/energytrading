@@ -1,0 +1,72 @@
+PZEM-004T 10A
+https://www.aliexpress.com/item/4000259667468.html
+
+Overview:
+
+1.We provide the software to connect it with the PC. If you want to connect it with other terminal device such as PLC,SCM and so on, please prepare the fitable cable and write the program by yourself.
+2. This document describes the specification of the PZEM-004T AC communication module, the module is mainly used for measuring AC voltage, current, active power, frequency, power factor and active energy, the module is without display function, the data is read through the TTL interface.
+
+PZEM-004T-10A: Measuring Range 10A (Built-in Shunt)
+PZEM-004T-100A: Measuring Range 100A (external transformer)
+
+
+Specifications:
+
+Working voltage: 80 ~ 260VAC
+Test voltage: 80 ~ 260VAC
+Rated power: 100A/22000W
+Operating frequency: 45-65Hz
+Measurement accuracy: 1.0 grade
+
+Function:
+
+Voltage
+1.1.1 Measuring range:80 - 260V
+1.1.2 Resolution: 0.1V
+1.1.3 Measurement accuracy: 0.5%
+1.2 Current
+1.2.1 Measuring range: 0 -10A(PZEM-004T-10A); 0-100A(PZEM-004T-100A)
+1.2.2 Starting measure current: 0.01A(PZEM-004T-10A); 0.02A(PZEM-004T-100A)
+1.2.3 Resolution: 0.001A
+1.2.4 Measurement accuracy: 0.5%
+1.3 Active power
+1.3.1 Measuring range: 0-2.3kW(PZEM-004T-10A); 0-23kW(PZEM-004T-100A)
+1.3.2 Starting measure power: 0.4W
+1.3.3 Resolution: 0.1W
+1.3.4 Display format:
+<1000W, it display one decimal, such as: 999.9W
+≥1000W, it display only integer, such as: 1000W
+1.3.5 Measurement accuracy: 0.5%
+1.4 Power factor
+1.4.1 Measuring range: 0.00-1.00
+1.4.2 Resolution: 0.01
+1.4.3 Measurement accuracy: 1%
+1.5 Frequency
+1.5.1 Measuring range: 45Hz-65Hz
+1.5.2 Resolution: 0.1Hz
+1.5.3 Measurement accuracy: 0.5%
+1.6 Active energy
+1.6.1 Measuring range: 0-9999.99kWh
+1.6.2 Resolution: 1Wh
+1.6.3 Measurement accuracy: 0.5%
+1.6.4 Display format:
+<10kWh, the display unit is Wh(1kWh=1000Wh), such as: 9999Wh
+≥10kWh, the display unit is kWh, such as: 9999.99kWh
+1.6.5 Reset energy: use software to reset.
+1.7 Over power alarm
+Active power threshold can be set, when the measured active power exceeds the threshold, it can alarm
+1.8 Communication interface
+RS485 interface
+
+style：
+1.10A Module
+
+Communication protocol
+
+1.1 Physical layer protocol
+Physical layer use UART to TTL communication interface
+Baud rate is 9600, 8 data bits, 1 stop bit, no parity
+
+Package Included:
+
+1 x PZEM-004T TTL Modbus-RTU Power Voltmeter Ammeter
