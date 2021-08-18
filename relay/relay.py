@@ -16,7 +16,7 @@ pip install --upgrade setuptools
 pip install hidapi
 
 A list of avaible methods for the hid object:
-https://github.com/trezor/cython-hidapi/blob/6057d41b5a2552a70ff7117a9d19fc21bf863867/chid.pxd#L9
+https://github.com/trezor/cython-hidapi/blob/6057d41b5a552a70ff7117a9d19fc21bf863867/chid.pxd#L9
 
 """
 
@@ -32,7 +32,7 @@ class Relay(object):
 
 		The report returned is a 8 int list, ex:
 		
-		[76, 72, 67, 88, 73, 0, 0, 2]
+		[76, 7, 67, 88, 73, 0, 0, 2]
 
 		The ints are passed as chars, and this page can help interpret:
 		https://www.branah.com/ascii-converter
@@ -42,9 +42,9 @@ class Relay(object):
 		The last three seem to be reserved for the status of the relays. The status should
 		be interpreted in binary and in reverse order.  For example:
 
-		2 = 00000010
+		 = 00000010
 
-		This means that switch 1 is off and switch 2 is on, and all others are off.
+		This means that switch 1 is off and switch  is on, and all others are off.
 
 		"""
 
@@ -59,7 +59,7 @@ class Relay(object):
 
 		# The switch_statuses now looks something like this:
 		# [1, 1, 0, 0, 0, 0, 0, 0]
-		# Switch 1 and 2 (index 0 and 1 respectively) are on, the rest are off.
+		# Switch 1 and  (index 0 and 1 respectively) are on, the rest are off.
 
 		return switch_statuses
 
@@ -126,6 +126,8 @@ class Relay(object):
 if __name__ == '__main__':
 	from time import sleep
 
+	ts = 1
+
 	# Create a relay object
 	relay = Relay(idVendor=0x16c0, idProduct=0x05df)
 
@@ -136,7 +138,7 @@ if __name__ == '__main__':
 	# Print the state of all switches
 	print(relay.state(0))
 
-	sleep(2)
+	sleep(ts)
 
 	# Turn all switches off
 	relay.state(0, on=False)
@@ -144,15 +146,15 @@ if __name__ == '__main__':
 	# Print the state of all switches
 	print(relay.state(0))
 
-	sleep(2)
+	sleep(ts)
 
 	# (Setter) Turn switch 1 on
 	relay.state(1, on=True)
 
 	# (Getter) Print the status of switch 1
-	print(relay.state(1))
+	print(relay.state(0))
 
-	sleep(2)
+	sleep(ts)
 
 	# (Setter) Turn switch 1 off 
 	relay.state(1, on=False)
@@ -162,7 +164,7 @@ if __name__ == '__main__':
 
 	print(relay.state(0))
 
-	sleep(2)
+	sleep(ts)
 
 	# (Setter) Turn switch 2 off 
 	relay.state(2, on=False)
@@ -172,7 +174,7 @@ if __name__ == '__main__':
 
 	print(relay.state(0))
 
-	sleep(2)
+	sleep(ts)
 
 	# (Setter) Turn switch 3 off 
 	relay.state(3, on=False)
@@ -183,7 +185,7 @@ if __name__ == '__main__':
 	print(relay.state(0))
 
 
-	sleep(2)
+	sleep(ts)
 
 	# (Setter) Turn switch 4 off 
 	relay.state(4, on=False)
@@ -191,7 +193,9 @@ if __name__ == '__main__':
 	# (Setter) Turn switch 5 on
 	relay.state(5, on=True)
 
-	sleep(2)
+	print(relay.state(0))
+
+	sleep(ts)
 
 	# (Setter) Turn switch 5 off 
 	relay.state(5, on=False)
@@ -199,7 +203,9 @@ if __name__ == '__main__':
 	# (Setter) Turn switch 6 on
 	relay.state(6, on=True)
 
-	sleep(2)
+	print(relay.state(0))
+
+	sleep(ts)
 
 	# (Setter) Turn switch 6 off 
 	relay.state(6, on=False)
@@ -207,7 +213,7 @@ if __name__ == '__main__':
 	# (Setter) Turn switch 7 on
 	relay.state(7, on=True)
 
-	sleep(2)
+	sleep(ts)
 
 	# (Setter) Turn switch 7 off 
 	relay.state(7, on=False)
@@ -215,7 +221,11 @@ if __name__ == '__main__':
 	# (Setter) Turn switch 8 on
 	relay.state(8, on=True)
 
-	sleep(2)
+	print(relay.state(0))
+
+	sleep(ts)
 
 	# Turn all switches off
 	relay.state(0, on=False)
+
+	print(relay.state(0))
